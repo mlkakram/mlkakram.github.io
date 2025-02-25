@@ -1,0 +1,592 @@
+/* CSS Reset: http://meyerweb.com/eric/tools/css/reset */
+/* From http://andyzeng.github.io/style.css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroupu 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#body{
+    font-family: Roboto, sans-serif;
+}
+
+#main {
+    width: 960px;
+    margin: 0px auto;
+    color: #a0a8b0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #49c0ec;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #49c0ec75;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 24px;
+    /* line-height: 24px; */
+    line-height: 1.2;
+    width: 100%;
+    margin: 30px auto 20px 30px;
+    color: #191e3f;
+}
+
+ul {
+    font-size: 15px;
+    line-height: 24px;
+    list-style-position: inside;
+    list-style-type: disc;
+    color: #a0a8b0;
+    padding-left: 0;
+}
+ol {
+    font-size: 15px;
+    line-height: 24px;
+    list-style-position: inside;
+    list-style-type: decimal;
+    color: #a0a8b0;
+}
+
+li {
+    margin-left: 0;
+}
+/**************************************************/
+
+#header {
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+/**************************************************/
+
+.project{
+    margin-top: 20px;
+}
+.project p {
+    margin-left: 30px;
+    /* margin-bottom: 10px;
+    margin-top: 20px; */
+    font-size: 18px;
+    line-height: 1.7;
+}
+.project h2 {
+    margin-top:30px;
+    margin-left: 30px;
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-left: 30px;
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.project .video {
+    text-align: center;
+}
+.project .video iframe {
+    width: 640px;
+    height: 360px;
+    margin-left: 30px;
+}
+.project .video video {
+    margin-left: 30px;
+    /* width: 640px; */
+}
+.twocol {
+    width: 420px;
+    margin-left: 30px;
+    float: left;
+}
+.twocol video {
+    width: 100%;
+    /* margin-bottom: 30px; */
+    margin-top: 10px;
+}
+.twocol p {
+    margin-left: 0px;
+    text-align: center;
+
+}
+.threecol {
+    width: 280px;
+    margin-left: 30px;
+    float: left;
+}
+.threecol video {
+    width: 100%;
+    /* margin-bottom: 30px; */
+    margin-top: 10px;
+}
+.project .threecol img {
+    width: 200px;
+}
+.threecol p {
+    margin-left: 0px;
+    text-align: center;
+}
+.project .teaser {
+    width: 40%;
+    float: right;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.project .teaser img {
+    width: 100%;
+    border: 1px solid; 
+    border-color: #191e3f;;
+
+}
+.project .thumb {
+    margin-right: 30px;
+}
+.project .thumb img {
+    width: 100%;
+    border: 1px solid; 
+    border-color: #191e3f;;
+    margin-bottom: 10px;
+}
+
+.project .image {
+    text-align: center;
+}
+.project img {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 840px;
+}
+
+
+/**************************************************/
+
+#profile {
+    padding: 30px 0px 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+#profile-name {
+    /*width: 100%;*/
+    margin-top: 0px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #191e3f;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#profile img {
+    height: 140px;
+    margin-top: 4px;
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+#profile p {
+    margin-bottom: 13px;
+}
+
+#profile-desc {
+    width: 675px;
+    float: left;
+}
+
+/**************************************************/
+
+.recent-work {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.highlight-proj {
+    width: 280px;
+    margin-left: 30px;
+    float: left;
+    height: 100%;
+}
+
+.highlight-proj video {
+    width: 100%;
+    /* margin-bottom: 30px; */
+    margin-top: 10px;
+}
+
+.highlight-proj a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.highlight-proj a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+.highlight-proj p {
+    margin-right: 30px;
+    text-align: center;
+}
+.highlight-proj2 p {
+    margin-right: 30px;
+}
+
+/**************************************************/
+
+
+.expandible {
+  display: none;
+}
+
+/**************************************************/
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-top: 30px;
+}
+#news-dates {
+    margin: 0px 0px 0px 30px;
+    width: 90px;
+    float: left;
+}
+
+#news-items {
+    float: left;
+}
+
+.showBtn {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+}
+
+.showBtn a {
+    color: #a0a8b0;
+    cursor: pointer;
+}
+
+.showBtn a:hover {
+    border-bottom: 1px solid #a0a8b0;
+}
+
+#moreNewsDates {
+    display: none;
+}
+
+#moreNewsItems {
+    display: none;
+}
+
+#moreNewsBtn {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#lessNewsBtn {
+    display: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/**************************************************/
+
+.research {
+    /*padding-bottom: 30px;*/
+}
+
+.research p {
+    color: #a0a8b0;
+}
+
+.research-proj {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.research-thumb {
+    width: 180px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-bottom: none;
+}
+
+.research-thumb:hover {
+    border-bottom: none;
+}
+
+.research-thumb img {
+    width: 100%;
+    /*border: 1px solid #191e3f;*/
+}
+
+.research-proj-desc {
+    width: 690px;
+    float: left;
+}
+
+.research-proj h2 {
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.research-proj h2 a {
+    color: #191e3f;
+}
+
+.research-proj h2 a:hover {
+    border-bottom: 1px solid #191e3f;
+}
+
+.research-proj p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #a0a8b0;
+}
+
+#morePubs {
+    display: none;
+}
+
+#morePubsBtn {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#lessPubsBtn {
+    display: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/**************************************************/
+
+.talks {
+    margin-bottom: 30px;
+}
+
+.services ul {
+    margin-left: 30px;
+}
+
+/**************************************************/
+
+#footer p {
+    width: 100%;
+    margin-top: 120px;
+    margin-left: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+body {
+  font-size: 28px;
+}
+.navibar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 60px;
+    /*position: -webkit-sticky;*/ /* Safari */
+    /* position: sticky; */
+    top: 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    /* margin: 12px 20px 20px 40px; */
+    /* padding: 5px 5px 5px 5px; */
+    /* border-bottom: 1px solid #ddd; */
+}
+.navibar p {
+    margin: 15px auto 20px auto; 
+}
+.navibar .fas:hover {
+    opacity: 0.5;
+}
+.footbar {
+    margin-bottom: 80px;
+}
+.content{
+    margin-bottom: 20px;
+}
+.content p {
+    margin-left: 30px;
+    /*margin-bottom: 10px;*/
+    font-size: 15px;
+}
+.content h2 {
+    margin-top:30px;
+    margin-left: 30px;
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.content .video iframe {
+    margin-left: 30px;
+}
+.content .thumb img {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid; 
+    border-color: #888888;
+}
+
+/* .content h3 {
+    margin-top:30px;
+    margin-left: 30px;
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+} */
+
+.post-proj {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.post-thumb {
+    width: 180px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-bottom: none;
+}
+
+.post-thumb:hover {
+    border-bottom: none;
+}
+
+.post-thumb img {
+    width: 100%;
+    /*border: 1px solid #191e3f;*/
+}
+
+.post-proj-desc {
+    width: 690px;
+    float: left;
+}
+
+.post-proj h2 {
+    color: #191e3f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.post-proj h2 a {
+    color: #191e3f;
+}
+
+.post-proj h2 a:hover {
+    border-bottom: 1px solid #191e3f;
+}
+
+.post-proj p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #a0a8b0;
+}
